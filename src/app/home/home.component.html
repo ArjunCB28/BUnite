@@ -1,14 +1,29 @@
-<p>home works!</p>
-<h2>Products</h2>
-<div *ngFor="let feed of UserFeeds">
-  <h3>
-    <a [name]=" + ' details'">
-      {{ feed.name }}
-    </a>
-  </h3>
-  <p *ngIf="feed.description">
-    Project Description: {{ feed.description }}
-  </p>
-
-
+<h2 class="header">Home</h2>
+<div *ngFor="let feed of UserFeeds" style="height: 150; ">
+  <div class="card container" style="margin: 10; ">
+    <img [src]="feed.avatar"  height="150" width="150" />
+    <div style="flex: auto;border: 10px; border-color: #111;">
+      <span style="padding: 0 10px 0 10px; font-size: 28px;">
+        <a [name]="feed.name + ' details'">
+          {{ feed.name }}
+        </a>
+      </span>
+      <p *ngIf="feed.description" style="padding: 0 10px 0 10px; font-size: 18px;">
+        Project Description: {{ feed.description }}
+      </p>
+      <div class="container" style="align-items: center; justify-content: center; align-self: center;">
+        <span class="like-icon"  style="padding: 10px 10px 0 10px;margin: 0 20px 0 20px;">
+          <i class="material-icons like-icon">
+            {{ feed.liked ? 'favorite' : 'favorite_border' }}
+          </i> <br> {{ feed.likes }}
+        </span>
+        <span style="padding: 10px 10px 0 10px;margin: 0 20px 0 20px;">
+          <i class="material-icons">
+            add_circle
+          </i> <br> Add to
+        </span>
+      </div>
+    </div>
+  </div>
+<div style="height: 1px; width: 100%; background-color: #111;margin: 10px 0 10px 0; "></div>
 </div>
