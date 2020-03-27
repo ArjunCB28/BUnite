@@ -9,6 +9,8 @@ import { IdeasComponent } from './ideas/ideas.component';
 import { FreeLanceComponent } from './free-lance/free-lance.component';
 import { ProfileComponent } from './profile/profile.component';
 
+
+
 const routes: Routes = [
 	{ path: 'home', component: HomeComponent },
 	{ path: 'idea', component: IdeasComponent },
