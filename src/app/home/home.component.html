@@ -1,14 +1,21 @@
 <p>home works!</p>
 <h2>Products</h2>
 <div *ngFor="let feed of UserFeeds">
-  <h3>
+
+
+  <h4>
     <a [name]=" + ' details'">
       {{ feed.name }}
     </a>
-  </h3>
+
+  </h4>
+  <span>
+    <img alt="feed.name" [src]="feed.icon"  height="70" width="70" />
   <p *ngIf="feed.description">
     Project Description: {{ feed.description }}
   </p>
+  </span>
+
 
 
 </div>

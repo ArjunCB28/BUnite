@@ -8,7 +8,8 @@ import {UserFeeds} from '../homedatafeeds';
 })
 export class HomeComponent implements OnInit {
   UserFeeds = UserFeeds;
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
