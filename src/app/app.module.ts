@@ -11,6 +11,7 @@ import { ProfileComponent } from './profile/profile.component';
 
 
 
+
 const routes: Routes = [
 	{ path: 'home', component: HomeComponent },
 	{ path: 'idea', component: IdeasComponent },
@@ -28,7 +29,8 @@ const routes: Routes = [
 	],
 	imports: [
 		BrowserModule,
-		RouterModule.forRoot(routes)
+		RouterModule.forRoot(routes),
+		
 	],
 	providers: [],
 	bootstrap: [AppComponent]
