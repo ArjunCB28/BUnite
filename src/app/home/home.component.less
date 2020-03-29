@@ -4,8 +4,32 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  align-self: center;
 }
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
 
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
 body {
   margin-bottom: 75px;
   clear: both;
@@ -53,7 +77,9 @@ a:hover {
 }
 
 /* Input */
-
+.like-icon {
+  color: red
+}
 input {
   font-size: 14px;
   border-radius: 2px;
@@ -72,7 +98,7 @@ label {
 img{
   border-radius: 50%;
 }
-div{
+#main_layout{
 
 
   margin: 0;
