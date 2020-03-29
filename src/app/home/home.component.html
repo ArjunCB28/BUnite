@@ -1,6 +1,6 @@
 <p>home works!</p>
 <h2>Products</h2>
-<div *ngFor="let feed of UserFeeds">
+<div class="card border border-secondary" *ngFor="let feed of UserFeeds" >
 
 
   <h4>
@@ -10,12 +10,16 @@
 
   </h4>
   <span>
-    <img alt="feed.name" [src]="feed.icon"  height="70" width="70" />
+
   <p *ngIf="feed.description">
-    Project Description: {{ feed.description }}
+
+    <img alt="feed.name" [src]="feed.icon"  height="70" width="70" >
+     <span> Project Description: {{ feed.description }}</span>
   </p>
+
   </span>
 
 
 
 </div>
+

@@ -1,6 +1,6 @@
 export const UserFeeds = [
   {
-    title: 'Hydro energy to run vehicles',
+    name: 'Hydro energy to run vehicles',
     likes: 450,
     description: 'The project has been proposed by grad alumni of MIT to enhance the utilization of Hydrocycle hypothesis',
     icon: 'https://www.real-world-physics-problems.com/images/xsalt_water_fuel_cell_car.jpg.pagespeed.ic.ihBGX2kkja.jpg'
@@ -21,7 +21,7 @@ export const UserFeeds = [
     name: 'NLP twitter dashboard',
     likes: 299,
     description: 'University of standford undergrad generic project',
-    icon: 'https://coro.etsmtl.ca/blog/images/PreciseFlex400.jpg'
+    icon: 'https://www.lyonwj.com/public/img/russian-twitter-trolls/louisiana.png'
   },
   {
     name: 'Transform the way you work',
