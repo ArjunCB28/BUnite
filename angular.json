@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "BUnite"
+    }
+  },
+  "defaultProject": "BUnite",
+  "cli": {
+    "analytics": "aff30b85-8a7c-4964-bcb8-66f85993bb97"
+  }
 }
