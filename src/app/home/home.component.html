@@ -1,35 +1,52 @@
-<p>home works!</p>
-<h2>Products</h2>
-<!--https://google.github.io/material-design-icons/ -->
-<div id="main_layout" class="card border border-secondary" *ngFor="let feed of UserFeeds" >
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<div id="body">
+  <form style="max-width:450px;margin:auto">
+  <div class="header">
+    <h1 class="text-white" style="text-align: center">
+      Home
+    </h1>
+  </div>
+
+  <!--https://google.github.io/material-design-icons/ -->
+
+    <div class="panel-group">
+      <div  *ngFor="let feed of UserFeeds" >
+  <div class="panel panel-default">
+    <h3 class="panel-heading"> <a [name]=" + ' details'">{{ feed.name }}</a></h3>
+    <div class="panel-body">
 
 
-  <h4>
-    <a [name]=" + ' details'">
-      {{ feed.name }}
-    </a>
 
-  </h4>
-  <span>
 
-  <p *ngIf="feed.description">
+  <div *ngIf="feed.description" >
 
-    <img alt="feed.name" [src]="feed.icon"  height="70" width="70" >
-     <span> Project Description: {{ feed.description }}</span>
-  </p>
+     <p><span><img alt="feed.name" [src]="feed.icon"  height="70" width="70" ></span></p>
+     <p><span> Project Description: {{ feed.description }}</span></p>
 
-  </span>
-  <div class="container" style="align-self: center;align-content: center;align-items: center;">
+        </div>
+
+
+      <div class="container" style="align-self: center;align-content: center;align-items: center;">
 <span class="like-icon" >
   <i class="material-icons like-icon">{{ feed.liked ? 'favorite' : 'favorite_border' }}</i>
   <br> {{ feed.likes }}
 </span>
-    <span style="padding-left: 14px" >
+              <span style="padding-left: 14px" >
     <i class="material-icons">add_circle</i>
     <br> Add to
     </span>
-  </div>
+      </div>
+    </div>
 
+        </div>
+      </div>
+    </div>
 
+  </form>
 </div>
+
 

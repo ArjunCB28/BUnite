@@ -1,11 +1,16 @@
 * {
-  font-family: 'Roboto', Arial, sans-serif;
-  color: #5d6147;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  align-self: center;
+
 }
+.header{
+  width: 100%;
+  height: 60px;
+  display: block;
+  background-color: #001f3f;
+  padding: 3px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -30,15 +35,16 @@
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
-body {
+#body {
   margin-bottom: 75px;
   clear: both;
-
+  opacity: 1;
 }
 
 .container {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 router-outlet + *  {
@@ -104,8 +110,8 @@ img{
   margin: 0;
   list-style-type: none;
   padding: 15px;
-  width: 320px;
-  border-radius: 50px 50px;
+  width: 360px;
+
   align-content: center;
-  border-style: inset;
+
 }
