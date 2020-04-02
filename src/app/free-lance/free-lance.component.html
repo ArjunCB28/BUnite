@@ -1,1 +1,57 @@
-<p>free-lance works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  
+    <div class="container-fluid">
+        <h1>Add Project Details</h1>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" id="usr" placeholder="Enter Project Name">
+            </div>
+            <div class="form-group green-border-focus">
+                <textarea class="form-control" id="exampleFormControlTextarea5" rows="6" placeholder="Enter Project Description"></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="cost" class="form-control" placeholder="Enter the approximate cost">
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="cost" class="form-control" placeholder="Requirements: Eg QA expert">
+            </div>
+
+            <div class="form-group">
+                <select name="labels" class="custom-select">
+                    <option selected>Select Areas</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="technology">Technology</option>
+                    <option value="finance">Finance</option>
+                    <option value="humanresources">Human Resources</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="exampleFormControlFile1">Add pitch/presentation</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+
+            <div class="text-right mb-3">
+                <a href="#" class="btn btn-link">Add fields+</a>
+            </div>
+        </form>
+        <div class="text-center">
+            <a href="#" type="Create" class="btn btn-primary">Create Project!</a>
+        </div>
+        
+    </div>
+</body>
+</html>
