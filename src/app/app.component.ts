@@ -12,11 +12,18 @@ export class AppComponent {
 
 	constructor(private router: Router) {
 		this.router = router;
-		this.router.navigate(['/home']);
+		var userDetails = localStorage.getItem("user");
+		if(userDetails === null){
+			this.router.navigate(['/signup']);
+		} else {
+			this.router.navigate(['/profile']);
+		}
 	}
 
 	routePage(page){
 		this.currentPage = page;
 		console.log(page);
 	};
+
+
 }

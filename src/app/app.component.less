@@ -1,24 +1,42 @@
-@footer-color: #eeeeee30;
+@footer-color: #f1f1f1;
 @footer-icon-color: #9E9E9E;
 
+@color-white: white;
 @footer-icon-active: #E53935;
 @footer-icon-selected: #EF5350;
 
 
 .content-area {
 	height: calc(100vh - 65px);
+	margin-top: 70px;
 	width: 100%;
-	padding: 10px;
     box-sizing: border-box;
 }
 
+.app-wrapper {
+	.navbar {
+		position: fixed;
+		width: 100%;
+		top: 0px;
+		z-index: 100;
+	}
+}
+
+.container {
+	padding: 0px;
+	nav {
+		color: @color-white;
+		background-color: @footer-icon-selected;
+	}
+}
 
 .footer-navbar {
 	height: 60px;
 	width: 100%;
+	z-index: 10;
 	background-color: @footer-color;
 	position: fixed;
-	bottom: 0px;
+	bottom: -2px;
 	-webkit-box-shadow: 0px -1px 4px 0px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0px -1px 4px 0px rgba(0, 0, 0, 0.1);
 	box-shadow: 0px -1px 4px 0px rgba(0, 0, 0, 0.1);

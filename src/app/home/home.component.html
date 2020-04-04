@@ -1,1 +1,17 @@
-<p>home works!</p>
+<div class="home-screen">
+	<div class="row" *ngFor="let idea of ideas.ideaList">
+		<div class="col-4">
+			<img class="w-100" [src]="idea.url">
+		</div>
+		<div class="col-8">
+			<h6>{{idea.title}}</h6>
+			<p class="">{{idea.description}}</p>
+			<div class="options" [ngClass]="{'liked': idea.liked}" (click)="liked(idea)">
+				<i class="material-icons md-dark">favorite</i> <span>{{idea.likes}}</span>
+			</div>
+			<div class="options" [ngClass]="{'liked': idea.favorite}" (click)="favorite(idea)">
+				<i class="material-icons md-dark">add_circle</i> <span>Add to favorites</span>
+			</div>
+		</div>
+	</div>
+</div>
