@@ -1,4 +1,29 @@
-#body {
-    margin-bottom: 75px;
-    clear: both;
- }
+.header{
+    width: 100%;
+    height: 60px;
+    display: block;
+    background-color: #001f3f;
+    margin-bottom: 10px;
+}
+.profilePicture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border-radius: 50%;
+  }
+
+  .coverPhoto{
+      position: absolute;
+  }
+  .coverPicture{
+      width: 100%;
+      height: 200px;
+  }
+  .description{
+    position: absolute;
+    padding-top: 120px;
+  }
+  .innerDescription{
+      padding-top: 100px;
+  }
