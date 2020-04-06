@@ -32,3 +32,5 @@ Register => Log In => Home Page => posting innovative idea => Home Page (idea po
                                             \__ Project Contribution Request 
  
                                 
+## Missing Part
+The current project includes the completely working prototype, however the project is not using the real database. We are going to use MongoDB Atlas for managing the data in backend. We have given a thought to use the combination of MEAN (MongoDB Atlas, Express.js, Angular, Node.js) stack for backend implementation.
