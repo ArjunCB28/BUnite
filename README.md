@@ -46,3 +46,4 @@ highly optimized to set priority for project to display based on keywords entere
 Therefore, recommendation system and search functionality needs on demand service
 invocation , where serverless computing plays pivotal role. We can augment lamda functions
 provided by Amazon AWS into our service architecture to make system highly manageable and flexible.  
+
