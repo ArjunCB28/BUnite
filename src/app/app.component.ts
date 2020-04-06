@@ -16,7 +16,7 @@ export class AppComponent {
 		if(userDetails === null){
 			this.router.navigate(['/signup']);
 		} else {
-			this.router.navigate(['/profile']);
+			this.router.navigate(['/home']);
 		}
 	}
 

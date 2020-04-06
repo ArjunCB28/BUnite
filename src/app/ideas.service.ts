@@ -57,7 +57,24 @@ export class IdeasService {
 		'url': 'https://xplain.co/wp-content/uploads/2019/10/artificial-intelligence-256x256.jpg'
 	}];
 
-	interests = [{
+	private businessList = [{
+		'title':'Relational intelligence recognition in online social networks',
+		'description':'Information networks today play an important, fundamental role in regulating real life activities. However, many methods developed on this framework lack the capacity to adequately represent sophistication contained within the information it carries. As a result, they suffer from problems such as inaccuracies, reliability and performance.',
+		'cost': 25000,
+		'requirements': 'Webapp developer,Netral network engineer,Investor'
+	},{
+		'title':'Application of deep learning for retinal image analysis: A review',
+		'description':'Retinal image analysis holds an imperative position for the identification and classification of retinal diseases such as Diabetic Retinopathy (DR), Age Related Macular Degeneration (AMD), Macular Bunker, Retinoblastoma, Retinal Detachment, and Retinitis Pigmentosa. Automated identification of retinal diseases is a big step towards early diagnosis and prevention of exacerbation of the disease. A number of state-of-the-art methods have been developed in the past that helped in the automatic segmentation and identification of retinal landmarks and pathologies',
+		'cost': 30000,
+		'requirements':'Business Analyst,Deep Learning engineer,QA',
+	},{
+		'title':'Introducing article numbering to Computer Science Review',
+		'description':'Within the publishing industry, article numbering has emerged as an easy and efficient way to cite journal articles. Article numbering has already been successfully rolled out to Elsevier’s multidisciplinary open access journal Heliyon, as well as more than 200 other journals, and has been well received by the academic community',
+		'cost': 35000,
+		'requirements':'Investor,Team manager,Python developer',
+	}];
+
+	private interests = [{
 		'id': 1,
 		'value': 'Machine Learning'
 	},{
@@ -73,4 +90,39 @@ export class IdeasService {
 		'id': 5,
 		'value': 'Startups'
 	}];
+
+	private roles = [{
+		'id':1,
+		'value':'Android Developer',
+	},{
+		'id':2,
+		'value':'Webapp developer',
+	},{
+		'id':3,
+		'value':'Python Developer',
+	},{
+		'id':4,
+		'value':'Data Analyst',
+	},{
+		'id':5,
+		'value':'Business Analyst',
+	},{
+		'id':6,
+		'value':'Marketing Analyst',
+	},{
+		'id':7,
+		'value':'Machine learning engineer',
+	}];
+
+	public getInterests(){
+		return this.interests;
+	}
+
+	public getBusinessList(){
+		return this.businessList;
+	}
+
+	public getRoles(){
+		return this.roles;
+	}	
 }

@@ -3,6 +3,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
 import { Router } from "@angular/router";
 import { IdeasService } from '../ideas.service';
+declare var jQuery: any;
 
 @Component({
 	selector: 'app-signup',
@@ -33,10 +34,13 @@ export class SignupComponent implements OnInit {
 
 	constructor(private router: Router, private ideas: IdeasService) {
 		this.router = router;
-		this.interests = this.ideas.interests;
+		this.interests = this.ideas.getInterests();
 	}
 
 	ngOnInit() {
+		setTimeout(() => {
+			jQuery('.selectpicker').selectpicker('refresh');
+		}, 0);
 	}
 
 	onSubmit(){

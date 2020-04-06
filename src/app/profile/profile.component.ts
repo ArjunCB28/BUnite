@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { IdeasService } from '../ideas.service';
 import Swal from 'sweetalert2';
+declare var jQuery: any;
 
 @Component({
 	selector: 'app-profile',
@@ -14,11 +15,13 @@ export class ProfileComponent implements OnInit {
 	private interests;
 
 	constructor(private ideas: IdeasService) {
-		this.interests = ideas.interests;
+		this.interests = ideas.getInterests();
 		var userDetails = JSON.parse(localStorage.getItem("user"));
 		if(userDetails === null){
 			return;
 		}
+		console.log("this.interests");
+		console.log(this.interests);
 		this.form = new FormGroup({
 			'firstName': new FormControl(userDetails.firstName, Validators.required),
 			'lastName': new FormControl(userDetails.lastName, Validators.required),
@@ -40,6 +43,9 @@ export class ProfileComponent implements OnInit {
 	}
 
 	ngOnInit() {
+		setTimeout(() => {
+			jQuery('.selectpicker').selectpicker('refresh');
+		}, 0);
 	}
 
 	onSubmit(){

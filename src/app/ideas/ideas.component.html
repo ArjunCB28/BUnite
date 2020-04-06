@@ -1,1 +1,29 @@
-<p>ideas works!</p>
+<div class="idea-wrapper">
+	<div *ngIf="!detailPage" class="listPage">
+		<div class="row">
+			<input class="form-control w-75" type="" name="">
+			<button class="btn btn-primary w-25">Search</button>
+		</div>
+
+		<div class="form-group ideas" *ngFor="let idea of businessIdeas" (click)="ideaSelected(idea)">
+			<h6>{{idea.title}}</h6>
+			<p class="description">{{idea.description}} <span>continue reading ...</span></p>
+			<p class="requirements">{{idea.requirements}}</p>
+		</div>
+	</div>
+
+	<div *ngIf="detailPage" class="detailPage">
+		<div class="back" (click)="back()">
+			<i class="material-icons md-dark">chevron_left</i> Back
+		</div>
+		<h5>{{selectedIdea.title}}</h5>
+		<p>{{selectedIdea.description}}</p>
+		<p class="requirements">We are looking for {{selectedIdea.requirements}}</p>
+		<p>Project estimate: ${{selectedIdea.cost}}</p>
+		<select class="form-control">
+			<option *ngFor="let requirement of requirementList">{{requirement}}</option>
+		</select>
+		<button class="btn btn-primary w-100" (click)="submitRequest()">Submit request</button>
+	</div>
+	<div style="margin-bottom: 60px;"></div>
+</div>

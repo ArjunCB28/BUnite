@@ -54,7 +54,7 @@
 
 		<!-- confirm password -->
 		<div class="form-group">
-			<input type="confirmPassword" placeholder="confirm password" class="form-control"  formControlName="confirmPassword" [ngClass]="{'is-invalid':form.get('confirmPassword').touched && form.get('confirmPassword').invalid}" />
+			<input type="password" placeholder="confirm password" class="form-control"  formControlName="confirmPassword" [ngClass]="{'is-invalid':form.get('confirmPassword').touched && form.get('confirmPassword').invalid}" />
 			<div *ngIf="form.get('confirmPassword').touched && form.get('confirmPassword').invalid"  class="invalid-feedback">
 				<div *ngIf="form.get('confirmPassword').errors.required">Password is required</div>
 				<div *ngIf="form.get('confirmPassword').errors.minlength">Password  must be a letaset 6 charector</div>

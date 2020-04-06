@@ -1,0 +1,54 @@
+
+@requirement-color: #007bff;
+
+.idea-wrapper {
+	padding: 10px;
+}
+.listPage {
+	.row {
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-bottom: 20px;
+	}
+	.ideas {
+		border-bottom: 1px solid grey;
+	}
+	.description {
+		height: 120px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		color: grey;
+		position: relative;
+		span {
+			position: absolute;
+			top: 96px;
+			z-index: 10;
+			background: white;
+			color: black;
+			width: 160px;
+			right: 25px;
+			padding-left: 20px;
+		}
+	}
+	.requirements {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		color: @requirement-color;
+	}
+}
+
+.detailPage {
+	.requirements {
+		color: @requirement-color;
+	}
+	button {
+		margin-top: 25px;
+	}
+	.back {
+		margin-bottom: 15px;
+		i {
+			vertical-align: text-top;
+		}
+	}
+}
