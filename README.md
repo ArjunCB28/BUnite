@@ -3,6 +3,14 @@ BUnite is a platform that connects business ideas, investors, job seekers, outso
 
 The idea behind developing this application is to improve the quality of the job, the lifestyle of labour and increasing employment opportunities which can lead to better economic development.
 
+## Installation
+* Clone the project
+* Navigate to the BUnite folder through the command line and enter the command "npm install"
+* Once the installation is done, type "ng serve" to run the web application.
+* Run "ng build" and copy the files in the dist folder into the Cordova/BUnite/www folder.
+* Make sure that you have Android SDK and Cordova installed in your machine to build an android app.
+* Navigate to Cordova/BUnite/ and enter "cordova run android" to run the application in an emulator or "cordova build android" to generate APK file
+
 ## Features
 Bunite helps innovaters to post their ideas on a ubiquitous plaform,
 where investors and project contributors are constantly looking for extension of project.
@@ -39,11 +47,4 @@ Therefore, recommendation system and search functionality needs on demand servic
 invocation , where serverless computing plays pivotal role. We can augment lamda functions
 provided by Amazon AWS into our service architecture to make system highly manageable and flexible.  
 
-## Installation
-* Clone the project
-* Navigate to the BUnite folder through the command line and enter the command "npm install"
-* Once the installation is done, type "ng serve" to run the web application.
-* Run "ng build" and copy the files in the dist folder into the Cordova/BUnite/www folder.
-* Make sure that you have Android SDK and Cordova installed in your machine to build an android app.
-* Navigate to Cordova/BUnite/ and enter "cordova run android" to run the application in an emulator or "cordova build android" to generate APK file
 
