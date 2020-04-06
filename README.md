@@ -29,6 +29,6 @@ Register => Log In => Home Page => posting innovative idea => Home Page (idea po
                          Home Page ==> \__ Like Project
                                         \__ contribute 
                                            \__ Investment Request
-                                            \__ Project Investment Request 
+                                            \__ Project Contribution Request 
  
                                 
