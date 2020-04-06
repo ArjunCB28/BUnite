@@ -1,7 +1,7 @@
 # BUnite
-BUnite is a platform which aids the investors, innovators and source code contributors to communicate with each others to fulfill the agenda of giving the shape to innovative ideas for their implementation.
+BUnite is a platform that connects business ideas, investors, job seekers, outsourcing and, freelancing together. BUnite helps promote joint ownership and encourages startup ideas to collaborate.
 
-The prime goal behind developing this application is to improve the lifestyle of labour and improving the employement opportunities which can lead to a better economic development.
+The idea behind developing this application is to improve the quality of the job, the lifestyle of labour and increasing employment opportunities which can lead to better economic development.
 
 ## Features
 Bunite helps innovaters to post their ideas on a ubiquitous plaform,
@@ -13,9 +13,9 @@ bilaterally considering the investors in mind :
     The home page lets the user to like the project, which facilitates sentiment analysis for augmenting page ranking algorithm to set priorities of projects.
     Moreover, add button lets contributors to contribute by funding or involvement in project.
      
-(2) Searching ideas - lets you filter several projects based on searched keywords, which are in currently under progress.
+(2) Searching ideas - lets you filter business and startup ideas based on searched keywords, which are in currently under progress.
 
-(3) posting innovative ideas - lets innovators to move their projects for its possible expansion in hope of receiving aid
+(3) Posting your ideas - lets innovators to move their projects for its possible expansion in hope of receiving aid
     from investors / contributors.
 
 Flow of application :
@@ -33,7 +33,7 @@ Register => Log In => Home Page => posting innovative idea => Home Page (idea po
  
                                 
 ## Missing Part
-The current project includes the completely working prototype, however the project is not using the real database. We are going to use MongoDB Atlas for managing the data in backend. We have given a thought to use the combination of MEAN (MongoDB Atlas, Express.js, Angular, Node.js) stack for backend implementation.
+The current project includes the completely working prototype, however, the project is not using the real database. We are going to use MongoDB Atlas for managing the data in the backend. We have given a thought to use the combination of MEAN (MongoDB Atlas, Express.js, Angular, Node.js) stack for backend implementation.
 
 ## Prospective / imminent features
 
@@ -54,5 +54,10 @@ invocation , where serverless computing plays pivotal role. We can augment lamda
 provided by Amazon AWS into our service architecture to make system highly manageable and flexible.  
 
 ## Installation
-/* yet to complete */  
+* Clone the project
+* Navigate to the BUnite folder through the command line and enter the command "npm install"
+* Once the installation is done, type "ng serve" to run the web application.
+* Run "ng build" and copy the files in the dist folder into the Cordova/BUnite/www folder.
+* Make sure that you have Android SDK and Cordova installed in your machine to build an android app.
+* Navigate to Cordova/BUnite/ and enter "cordova run android" to run the application in an emulator or "cordova build android" to generate APK file
 
