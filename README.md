@@ -17,21 +17,7 @@ bilaterally considering the investors in mind :
 
 (3) Posting your ideas - lets innovators to move their projects for its possible expansion in hope of receiving aid
     from investors / contributors.
-
-Flow of application :
-
-Register => Log In => Home Page => Select idea => project detail page. 
-
-Register => Log In => Home Page => Searching Ideas =>  Select idea => project detail page.
-
-Register => Log In => Home Page => posting innovative idea => Home Page (idea posted on home page).                            
-                        
-                         Home Page ==> \__ Like Project
-                                        \__ contribute 
-                                           \__ Investment Request
-                                            \__ Project Contribution Request 
- 
-                                
+          
 ## Missing Part
 The current project includes the completely working prototype, however, the project is not using the real database. We are going to use MongoDB Atlas for managing the data in the backend. We have given a thought to use the combination of MEAN (MongoDB Atlas, Express.js, Angular, Node.js) stack for backend implementation.
 
