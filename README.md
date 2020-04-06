@@ -1,27 +1,31 @@
 # BUnite
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
+#features
+Bunite helps innovaters to post their ideas on a ubiquitous plaform,
+where investors and project contributors are constantly looking for extension of project.
+So, following features can help them to bridge their requirements
+bilaterally considering the investors in mind :
 
-## Development server
+(1) Home page of an application lists all projects currently under progress (generally looking for funds in most cases).
+    The home page lets the user to like the project, which facilitates sentiment analysis for augmenting page ranking algorithm to set priorities of projects.
+    Moreover, add button lets contributors to contribute by funding or involvement in project.
+     
+(2) Searching ideas - lets you filter several projects based on searched keywords, which are in currently under progress.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+(3) posting innovative ideas - lets innovators to move their projects for its possible expansion in hope of receiving aid
+    from investors / contributors.
 
-## Code scaffolding
+Flow of application :
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Register => Log In => Home Page => Select idea => project detail page. 
 
-## Build
+Register => Log In => Home Page => Searching Ideas =>  Select idea => project detail page.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Register => Log In => Home Page => posting innovative idea => Home Page (idea posted on home page).                            
+                        
+                         Home Page ==> \__ Like Project
+                                        \__ contribute 
+                                           \__ Investment Request
+                                            \__ Project Investment Request 
+ 
+                                
