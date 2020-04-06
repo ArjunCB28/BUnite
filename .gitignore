@@ -44,3 +44,8 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+
+/cordova/BUnite/node_modules
+/cordova/BUnite/platforms
+/cordova/BUnite/www
