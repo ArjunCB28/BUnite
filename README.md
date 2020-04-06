@@ -3,7 +3,7 @@ BUnite is a platform which aids the investors, innovators and source code contri
 
 The prime goal behind developing this application is to improve the lifestyle of labour and improving the employement opportunities which can lead to a better economic development.
 
-# Features
+## Features
 Bunite helps innovaters to post their ideas on a ubiquitous plaform,
 where investors and project contributors are constantly looking for extension of project.
 So, following features can help them to bridge their requirements
