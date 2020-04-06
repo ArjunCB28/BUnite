@@ -37,7 +37,7 @@ The current project includes the completely working prototype, however the proje
 
 ## Prospective / imminent features
 
-The main objective of the any project is to make overall system to be loosely coupled 
+The main objective of any project is to make overall system to be loosely coupled 
 to swap the functionalists whenever possible. However, MEAN defined as missing part ,can also
 be swapped with highly scalable framework such as spring boot, where dynamic cloud configuration is
 possible with cloud services such as GCP and Amazon AWS.
