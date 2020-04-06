@@ -34,3 +34,25 @@ Register => Log In => Home Page => posting innovative idea => Home Page (idea po
                                 
 ## Missing Part
 The current project includes the completely working prototype, however the project is not using the real database. We are going to use MongoDB Atlas for managing the data in backend. We have given a thought to use the combination of MEAN (MongoDB Atlas, Express.js, Angular, Node.js) stack for backend implementation.
+
+## Prospective / imminent features
+
+The main objective of the any project is to make overall system to be loosely coupled 
+to swap the functionalists whenever possible. However, MEAN defined as missing part ,can also
+be swapped with highly scalable framework such as spring boot, where dynamic cloud configuration is
+possible with cloud services such as GCP and Amazon AWS.
+
+Moreover, EC2 containerized services provided by prominent service provider such as GCP and AWS
+can serve the purpose for hosting backend databases such as MongoDB or HBase.
+
+Moreover, the project recommendation system should rely on preferences of user and their activity
+applying NLP modules. Similarly, the search functionality should also based on page ranking algorithm,
+highly optimized to set priority for project to display based on keywords entered.
+
+Therefore, recommendation system and search functionality needs on demand service
+invocation , where serverless computing plays pivotal role. We can augment lamda functions
+provided by Amazon AWS into our service architecture to make system highly manageable and flexible.  
+
+## Installation
+/* yet to complete */  
+
